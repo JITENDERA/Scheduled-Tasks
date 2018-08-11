@@ -41,7 +41,8 @@ namespace Scheduled_Tasks
                 var toAddress = new MailAddress(items[i].to);
                 string subject = items[i].subject;
 
-                string MailBody = body.MailBodyData(dt);
+               // string MailBody = body.MailBodyData(dt);
+                string MailBody = body.MailBodyDesignationGroup(dt);
 
                 SmtpClient smtp = new SmtpClient
                 {
