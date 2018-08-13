@@ -61,7 +61,7 @@ namespace Scheduled_Tasks
 
             {
 
-                MailBody += "<p>" + key.Value.Designation + "</p>";
+                MailBody += "<p style=\"color:red\">" + key.Value.Designation + "</p>";
                 
                 foreach (var columnValue in key.ColumnValues)
 
